@@ -8,7 +8,7 @@ use of Apache OpenNLP Tools lib in order to identify all the POS of the words of
 This project is for Kotlin Jetpack Compose initiated users.
 
 ## Presentation
-`Apache OpenNLP Tools` can identify all the Part of speechs of a text, unlike `Wordnet` that can only identify some pos but wirth more features than OpenNLP. 
+`Apache OpenNLP Tools` can identify all the Part of speech of a text, unlike `Wordnet` that can only identify some pos but with more features than OpenNLP. 
 
 ## Overview
 
