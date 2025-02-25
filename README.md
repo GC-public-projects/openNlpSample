@@ -127,7 +127,7 @@ class MainActivity : ComponentActivity() {
 Not that much code to explain.
 
 - `val model = POSModel(inputStream)` : loading of the POS model from the assets in a POSModel object
-- `tagger = POSTaggerME(model)` : The the model is loaded in a POSTaggerME object
+- `tagger = POSTaggerME(model)` : The model is loaded in a POSTaggerME object
 - `val whiteSpaceTokenizer = WhitespaceTokenizer.INSTANCE` & `val tokens = whiteSpaceTokenizer.tokenize(sentence)` : tokenization of the string in an array
 - `val tags = tagger.tag(tokens) ` : all tags from the array of tokens recorded in another array 
 - `tags?.let { listTokensWithTags.addAll(tokens?.zip(it) ?: emptyList()) }` : all values of the 2 arrays combined in pairs and added to `listTokensWithTags` list
