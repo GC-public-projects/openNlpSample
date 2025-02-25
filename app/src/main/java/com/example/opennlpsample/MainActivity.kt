@@ -81,13 +81,8 @@ class MainActivity : ComponentActivity() {
         val whiteSpaceTokenizer = WhitespaceTokenizer.INSTANCE
         val tokens = whiteSpaceTokenizer.tokenize(sentence)
         val tags = tagger.tag(tokens)  // Use the preloaded tagger
-        tags?.let {
-            tokens?.zip(tags)?.forEach { (word, tag) ->
-                listTokensWithTags.add(Pair(word, tag))
-            }
-        }
+        tags?.let { listTokensWithTags.addAll(tokens?.zip(it) ?: emptyList()) }
 
         return listTokensWithTags
     }
-
 }
